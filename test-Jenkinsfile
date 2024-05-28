@@ -15,7 +15,7 @@ pipeline {
                 sh 'npm pack'
             }
         }
-        stage ("upload artifact"){
+        stage ("upload artifacts"){
             steps{
                 sh 'curl -uadmin:AP2pVAGB8Lcqx4h8N6Rvrn75bDo -T \
                  *.tgz \
